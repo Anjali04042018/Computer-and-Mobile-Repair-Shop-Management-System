@@ -33,8 +33,7 @@
             <span class="mr-2"><i class="fa fa-phone mr-1"></i> <?= $_settings->info('contact') ?></span>
           </div>
           <div>
-            <?php if($_settings->userdata('id') > 0): ?>
-              <span class="mx-2"><img src="<?= validate_image($_settings->userdata('avatar')) ?>" alt="User Avatar" id="student-img-avatar"></span>
+            // <?php if($_settings->userdata('id') > 0): ?>
               <span class="mx-2">Howdy, <?= !empty($_settings->userdata('username')) ? $_settings->userdata('username') : $_settings->userdata('email') ?></span>
             <?php if($_settings->userdata('login_type') == 1): ?>
               <span class="mx-1"><a href="<?= base_url.'classes/Login.php?f=logout' ?>"><i class="fa fa-power-off"></i></a></span>
